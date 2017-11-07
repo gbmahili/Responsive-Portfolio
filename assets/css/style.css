@@ -300,12 +300,54 @@ h1, h2{
 }
 
 
-
-
-
-
 /* 2. When the screen has a maximum width of 768px */
-@media screen and (max-width : 7680px) {
+@media screen and (max-width : 768px) {
+
+    body{
+        width: 768px;
+    }
+
+    .nav{
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    #main-content{
+        width: 100%;
+        margin: 20px;
+    }
+
+    #content-on-me{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 35px;
+        padding-bottom: 200px;
+        margin: 10px;
+        width: 100%;        
+    }
+
+    #about, #social-media{
+        width: 80%;
+        margin: 30px;
+    } 
+
+    #about > img {
+        float: left;
+        border-radius: 0;
+        width: 280px;
+        height: 210px;
+    } 
+
+    /* Portfolio Page */
+
+    #my-work{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-auto-rows: minmax(300px, auto);
+        grid-gap: 2em;
+    }
     
 }
 
