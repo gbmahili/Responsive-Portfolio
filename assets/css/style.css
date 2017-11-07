@@ -326,14 +326,12 @@ h1, h2{
         margin-top: 50px;
         width: 80%;        
     }
-
-
-
     /* First, we get rid of the grid layout and make it a block */
     .nav{
         display: block;
         text-align: center;
         width: 100%;
+        height: 130px;
     }
     /* Then, we float everything to the left */
     .nav > div {
@@ -341,11 +339,23 @@ h1, h2{
         text-align: center;
         margin: 3% 10%;
     }
+
+    .nav span{
+        display: none;
+    }
+
+    .nav div:after {
+        content: "|";
+        padding: 0 .5em;
+    }
     /* Then, we remove the float from the div with the logo */
     #logo{
         float: none;
         margin-bottom: 2px;
         margin: inherit;
+    }
+    #logo:after{
+        content: none;
     }
 
     #about  img {
